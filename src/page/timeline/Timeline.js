@@ -80,13 +80,13 @@ export default function Timeline() {
             <i className="fas fa-envelope bg-black" />
             <div className="timeline-item">
               <span className="time"><i className="fas fa-clock" />{item.time}</span>
-              <h3 className="timeline-header">{item.name} write new message</h3>
+              <h5 className="timeline-header">{item.name} makes new contribution</h5>
               <div className="timeline-body">
               <h3 className="text-center">{item.topic}</h3>
               <ReadMoreReact text={item.comment}
                 min={50}
                 ideal={100}
-                max={500}
+                max={1000}
               
                 readMoreText="read more"
   

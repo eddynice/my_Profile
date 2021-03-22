@@ -1,11 +1,10 @@
 import React,{Component} from 'react'
-//import {Formik} from "formik";
 import swal from  "sweetalert"
 import * as Yup from "yup";
 import {Link} from "react-router-dom"
 import {Formik} from "formik";
 import axios from '../../axios';
-//import { useHistory} from "react-router-dom"
+
 
 
 
@@ -24,7 +23,7 @@ const signupSchema = Yup.object().shape({
     .min(6, 'Password should be of minimum 8 characters length')
     .required('Password is required'),
 });
-//import  "./login.css"
+
 
 
 
@@ -115,7 +114,7 @@ componentDidMount(){
                 Remember Me
               </label>
             </div>
-          </div>
+          </div>  
           {/* /.col */}
           <div className="col-4">
             <button type="submit" className="btn btn-danger btn-block">Sign In</button>
@@ -133,18 +132,16 @@ render(){
 {/* /.login-logo */}
 <div className="card card-outline card-primary">
 <div className="card-header text-center">
-<h1><b>TRU</b>CLASS</h1>
+<h1><b>TRU</b>-CLASS</h1>
 </div>
 <div className="card-body">
-<p className="login-box-msg">Sign in to start your session</p>
+<p className="login-box-msg">Sign in </p>
 <Formik initialValues={{
-  username:"",
   email:"",
-  password:"",
-  confirm_password:"" 
+  password:"" 
 }}
 onSubmit={(values,{setSubmitting})=>{
-   console.log(values);
+  // console.log(values);
    this.submitForm(values,
        
        this.props.history);
@@ -171,7 +168,7 @@ validationSchema={signupSchema}
       
       <p className="text-center"> OR </p>
       <div className="social-auth-links text-center">
-      <Link className="text-center btn btn-block btn-primary " to="/">REGISTER AS A NEW USER</Link>
+      <Link className="text-center btn btn-block" to="/">REGISTER AS A NEW USER</Link>
       </div>
 {/** 
       <p className="mb-0">

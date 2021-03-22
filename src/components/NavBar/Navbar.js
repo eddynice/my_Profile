@@ -24,6 +24,10 @@ padding:0 1rem;
 height:100%;
 cursor:pointer;
 text-decoration:none;
+
+&:hover{
+    text-decoration:none;
+}
 `;
 
 const Logo=styled.img`
@@ -75,6 +79,10 @@ display:flex;
 align-itens:center;
 margin-right:24px;
 
+&:hover{
+    text-decoration:none;
+}
+
 @media screen and (max-width:768px){
     display:none
 }
@@ -90,11 +98,11 @@ margin-right:24px;
             <MenuBars onClick={toggle}/>
                 <NavMenu>
                 
-                         <NavMenuLink to="/timeline">timeline</NavMenuLink>
+                         <NavMenuLink to="/timeline">Timeline</NavMenuLink>
                          
-                         <NavMenuLink to="/detail">explore</NavMenuLink>
+                         <NavMenuLink to="/detail">Explore</NavMenuLink>
                          
-                         <NavMenuLink to="/about">timine</NavMenuLink>
+                         <NavMenuLink to="/about">About</NavMenuLink>
 
 
                         

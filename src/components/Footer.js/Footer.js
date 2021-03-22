@@ -7,8 +7,8 @@ export default function Footer() {
         <div className={styles.footerhomew}>
               <footer className={styles.footer}>
           <section>
-            <h2>
-              <i className='fab fa-twitter'></i> Follow top activists
+          <h2>
+              <i className='fab fa-twitter'></i> follow me 
             </h2>
             <ul>
              
@@ -48,38 +48,8 @@ export default function Footer() {
                 </a>
               </li>
 
-              <li>
-                <a
-                  href='https://twitter.com/'
-                  target='_blank'
-                  rel='noreferrer noopener'
-                >
-                  @iamEddynics
-                </a>
-              </li>
-
               
-
              
-              <li>
-                <a
-                  href='https://twitter.com/ridwanabiola2'
-                  target='_blank'
-                  rel='noreferrer noopener'
-                >
-                  @tru
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href='https://twitter.com/EvidSO'
-                  target='_blank'
-                  rel='noreferrer noopener'
-                >
-                  @EvidenceISO
-                </a>
-              </li>
 
               <li>
                 <a
